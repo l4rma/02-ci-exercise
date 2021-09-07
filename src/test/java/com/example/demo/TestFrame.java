@@ -8,7 +8,20 @@ public class TestFrame {
     @Test
     void UltimateEasyFrameTest(){
         Frame frame = new Frame();
-        frame.setKast(1);
+        frame.kastBallen();
         assertTrue(frame.getKast()==1);
+    }
+
+    @Test
+    void Kast_ballen_mange_ganger(){
+        Frame frame = new Frame();
+        frame.kastBallen();
+        frame.kastBallen();
+        frame.kastBallen();
+        frame.kastBallen();
+        frame.kastBallen();
+        frame.kastBallen();
+        frame.kastBallen();
+        assertTrue(frame.getFrame()!=1);
     }
 }
